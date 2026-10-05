@@ -1,6 +1,6 @@
 """pyvista_miniply module."""
 
-from pyvista_miniply.reader import read, read_as_mesh  # noqa: F401
+from pyvista_miniply.reader import read, read_as_mesh
 
 try:
     from pyvista_miniply._version import version as __version__
@@ -13,4 +13,4 @@ except ImportError:  # pragma: no cover
         __version__ = "unknown"
 
 
-__all__ = ["read", "read_as_mesh", "__version__"]
+__all__ = ["__version__", "read", "read_as_mesh"]
