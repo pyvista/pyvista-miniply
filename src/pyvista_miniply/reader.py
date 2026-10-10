@@ -2,7 +2,7 @@
 
 import os
 from pathlib import Path
-from typing import TYPE_CHECKING, Union
+from typing import TYPE_CHECKING
 
 import numpy as np
 from numpy.typing import NDArray
@@ -123,7 +123,7 @@ def _polydata_from_vertices(points: NDArray[np.float32]) -> "PolyData":
 
 
 def read(
-    filename: Union[str, Path],
+    filename: str | Path,
     read_normals: bool = True,
     read_uv: bool = True,
     read_color: bool = True,
@@ -237,7 +237,7 @@ def read(
 
 
 def read_as_mesh(
-    filename: Union[str, Path],
+    filename: str | Path,
     read_normals: bool = True,
     read_uv: bool = True,
     read_color: bool = True,
